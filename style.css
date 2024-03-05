@@ -1,0 +1,77 @@
+#tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+#editor-tab, #terminal-tab {
+    display: none; /* Initially hide terminal tab */
+}
+
+#editor-tab {
+    display: block; /* Initially show editor tab */
+}
+
+
+#editor {
+    width: 100vw; /* 设置宽度为视口的宽度 */
+    height: calc(100vh - 50px); /* 减去顶部 Tab 按钮和运行按钮的高度 */
+    box-sizing: border-box; /* 使边框和内边距包含在宽高内 */
+    border: 1px solid #ccc; /* 添加边框样式 */
+    margin: 0; /* 移除外边距 */
+    resize: none; /* 禁止用户手动调整大小 */
+    overflow-y: auto; /* 允许垂直滚动 */
+    background-color: #fff; /* 设置背景颜色为白色 */
+}
+
+
+
+#button-container {
+    margin-top: 10px;
+}
+
+
+
+#terminal {
+    width: 100%;
+    height: calc(100vh - 50px); /* 减去顶部 Tab 按钮和运行按钮的高度 */
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: auto; /* 允许垂直滚动 */
+}
+
+
+#terminal-content, #cursor {
+    display: inline;
+}
+
+#terminal-content {
+    white-space: pre-wrap;
+}
+
+#terminal-content {
+    white-space: pre-wrap;
+    font-family: monospace;
+}
+
+#cursor {
+    display: inline; /* 初始化状态不显示，JavaScript 会控制显示 */
+    width: 8px; /* 光标的宽度，根据需要调整 */
+    height: 1.2em; /* 光标的高度 */
+    background-color: white; /* 光标颜色，确保与背景色对比 */
+    vertical-align: bottom; /* 对齐到底部 */
+    margin-left: -1px; /* 调整光标位置 */
+}
+
+.blink {
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%, 100% { background-color: white; }
+    50% { background-color: transparent; }
+}
+
