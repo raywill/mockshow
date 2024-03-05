@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         editor.focus();
     }
     // init view
-    simButton.style.display = 'inline';
     runButton.style.display = 'inline';
+    simButton.style.display = 'none';
     codeButton.style.display = 'none';
 });
 
