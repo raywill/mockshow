@@ -43,7 +43,7 @@ Query OK, 0 rows affected (0.001 sec)
 
 ## Command
 
-`>`  prompt line. instant display the prompt content.
-`-`  typing line. emulate the typing process
-`pause ` pause command. emulate the calculation wait
+- `>`  prompt line. instant display the prompt content.
+- `-`  typing line. emulate the typing process
+- `pause ` pause command. emulate the calculation wait in mill-sec
 
