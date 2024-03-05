@@ -47,3 +47,7 @@ Query OK, 0 rows affected (0.001 sec)
 - `-`  typing line. emulate the typing process
 - `pause ` pause command. emulate the calculation wait in mill-sec
 
+
+## Live demo
+
+Try it out at [https://raywill.github.io/mockshow/](https://raywill.github.io/mockshow/)
